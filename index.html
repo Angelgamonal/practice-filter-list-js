@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Filter List</title>
+		<link
+			href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav class="bg-gray-800">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
+					<div class="flex-shrink-0">
+						<a href="#" class="text-white text-lg font-semibold">Logo</a>
+					</div>
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-4">
+							<a
+								href="#"
+								class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+								>Inicio</a
+							>
+							<a
+								href="#"
+								class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+								>Acerca de</a
+							>
+							<a
+								href="#"
+								class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+								>Servicios</a
+							>
+							<a
+								href="#"
+								class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+								>Contacto</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<input type="text" id="input" value="" />
+
+		<ul id="list">
+			<li></li>
+		</ul>
+
+		<div class="max-w-sm rounded overflow-hidden shadow-lg">
+			<img
+				class="w-full h-56 object-cover"
+				src="https://gdb.voanews.com/01630000-0aff-0242-8481-08da8310b314_w1023_r1_s.jpg"
+				alt="Imagen"
+			/>
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2">Título de la tarjeta</div>
+				<p class="text-gray-700 text-base">Contenido de la tarjeta</p>
+			</div>
+			<div class="px-6 pt-4 pb-2">
+				<span
+					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+					>#Etiqueta1</span
+				>
+				<span
+					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+					>#Etiqueta2</span
+				>
+			</div>
+			<div class="px-6 py-2 flex justify-center mb-2">
+				<button
+					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+				>
+					Ver más
+				</button>
+			</div>
+		</div>
+
+		<script type="module" src="./app.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</body>
+</html>
