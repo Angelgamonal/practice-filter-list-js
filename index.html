@@ -9,6 +9,8 @@
 			href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
 			rel="stylesheet"
 		/>
+
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<nav class="bg-gray-800">
@@ -25,7 +27,7 @@
 								>Inicio</a
 							>
 							<a
-								href="#"
+								href="practice.html"
 								class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 								>Acerca de</a
 							>
@@ -45,42 +47,25 @@
 			</div>
 		</nav>
 
-		<input type="text" id="input" value="" />
+		<section class="flex justify-center mt-4">
+			<div class="w-64">
+				<label class="block text-gray-700 text-sm font-bold mb-2" for="nombre"
+					>Buscador:</label
+				>
+				<input
+					class="appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500"
+					id="inputSearch"
+					type="text"
+					placeholder="Ingresa un nombre"
+				/>
+			</div>
+		</section>
 
-		<ul id="list">
-			<li></li>
-		</ul>
-
-		<div class="max-w-sm rounded overflow-hidden shadow-lg">
-			<img
-				class="w-full h-56 object-cover"
-				src="https://gdb.voanews.com/01630000-0aff-0242-8481-08da8310b314_w1023_r1_s.jpg"
-				alt="Imagen"
-			/>
-			<div class="px-6 py-4">
-				<div class="font-bold text-xl mb-2">Título de la tarjeta</div>
-				<p class="text-gray-700 text-base">Contenido de la tarjeta</p>
-			</div>
-			<div class="px-6 pt-4 pb-2">
-				<span
-					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-					>#Etiqueta1</span
-				>
-				<span
-					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
-					>#Etiqueta2</span
-				>
-			</div>
-			<div class="px-6 py-2 flex justify-center mb-2">
-				<button
-					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-				>
-					Ver más
-				</button>
-			</div>
-		</div>
+		<section class="card-list" id="cardList"></section>
 
 		<script type="module" src="./app.js"></script>
+		<!-- <script type="module" src="./practice.js"></script> -->
+
 		<script src="https://cdn.tailwindcss.com"></script>
 	</body>
 </html>
